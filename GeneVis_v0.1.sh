@@ -276,7 +276,7 @@ do
 	Gene=`echo "${Gene}" | tr ')' '_'`
 	Gene=`echo "${Gene}" | tr '/' '_'`
 	Gene=`echo "${Gene}" | tr ' ' '_'`
-	echo "$Gene"
+	#echo "$Gene"
 	
 	#PosSt=` expr $Pos - $FLANK `
 	#PosEnd=` expr $Pos + $FLANK `
