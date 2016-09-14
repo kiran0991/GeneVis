@@ -272,6 +272,12 @@ do
 	PosEnd=`echo "${line}" | awk '{print $3;}'`
 	Gene=`echo "${line}" | awk '{print $4;}'`
 	
+	Gene=`echo "${Gene}" | tr '(' '_'`
+	Gene=`echo "${Gene}" | tr ')' '_'`
+	Gene=`echo "${Gene}" | tr '/' '_'`
+	Gene=`echo "${Gene}" | tr ' ' '_'`
+	echo "$Gene"
+	
 	#PosSt=` expr $Pos - $FLANK `
 	#PosEnd=` expr $Pos + $FLANK `
 	
